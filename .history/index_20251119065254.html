@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pencarian Pelapak UMKM</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="header-text">
+                <h1>Sistem Manajemen Kelola Lapak</h1>
+                <p class="desc">
+                    Validasi Pelapak dengan Cepat & Tepat.
+                </p>
+            </div>
+
+            <div class="controls">
+                <label class="theme-toggle" aria-label="Toggle dark mode">
+                    <input id="themeToggle" type="checkbox" />
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Mode Gelap</span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <section class="benefit-section">
+        <h2>Benefit Sistem Validasi Pelapak</h2>
+        <ul class="benefit-list">
+            <li>Memastikan hanya pelapak aktif yang tetap berada di grup.</li>
+            <li>Pelapak tidak aktif atau lapak hangus dapat langsung dikeluarkan dari grup.</li>
+            <li>Menghemat waktu panitia karena pencarian data dilakukan otomatis dan cepat.</li>
+            <li>Mempermudah panitia memvalidasi dan mengelola data pelapak dengan lebih akurat.</li>
+            <li>Mencegah penyalahgunaan grup WA untuk promosi oleh pelapak yang tidak aktif.</li>
+        </ul>
+    </section>
+
+    <main>
+        <section class="search-card">
+            <div class="search-box">
+                <input type="text" id="queryInput" placeholder="Masukkan Nama4 digit terakhir nomor WA.."
+                    autocomplete="off" aria-label="Kolom pencarian pelapak" />
+                <button id="searchBtn" aria-label="Tombol cari pelapak">Cari</button>
+            </div>
+        </section>
+
+        <!-- RESULT BOX -->
+        <section>
+            <div id="resultBox" class="result-box hidden" role="region" aria-live="polite"></div>
+        </section>
+
+        <!-- LOADING SPINNER -->
+        <div id="loader" class="loader hidden" aria-hidden="true"></div>
+
+        <!-- SKELETON LOADING -->
+        <div id="skeletonBox" class="skeleton-box hidden" aria-hidden="true">
+            <div class="skeleton-item"></div>
+            <div class="skeleton-item"></div>
+            <div class="skeleton-item"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

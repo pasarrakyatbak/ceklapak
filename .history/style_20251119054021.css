@@ -1,0 +1,66 @@
+/* === FONT === */
+
+
+/* === RESULT BOX === */
+.result-box {
+    margin-top: 25px;
+    background: var(--card);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.result-item {
+    padding: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: var(--radius);
+    transition: background 0.2s;
+}
+
+
+.result-item:hover {
+    background: rgba(150, 180, 255, 0.08);
+}
+
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+
+.result-item strong {
+    color: var(--primary);
+}
+
+
+.small {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+
+/* === Responsive === */
+@media (max-width: 480px) {
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pencarian Pelapak UMKM</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="header-text">
+                <h1>Pencarian Pelapak UMKM</h1>
+                <p class="desc">
+                    Benefit Sistem Pencarian Pelapak
+
+                    Pengecekan sangat cepat — panitia cukup memasukkan nama pelapak atau 4 digit terakhir nomor HP,
+                    tanpa menelusuri chat WA atau membuka buku satu per satu.
+
+                    Identifikasi aktif/tidak aktif langsung terlihat, sehingga pelapak yang lapaknya hangus bisa segera
+                    diproses untuk dikeluarkan dari grup WA.
+
+                    Grup WA lebih tertib dan fokus, karena hanya pelapak aktif yang tetap mendapat hak untuk promosi.
+
+                    Menghemat waktu dan tenaga panitia, terutama saat jumlah pelapak banyak.
+
+                    Pendataan lebih rapi dan konsisten, karena semua panitia memakai sistem yang sama tanpa perlu
+                    menebak-nebak nomor siapa.
+                </p>
+            </div>
+
+            <div class="controls">
+                <label class="theme-toggle" aria-label="Toggle dark mode">
+                    <input id="themeToggle" type="checkbox" />
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Mode Gelap</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-card">
+            <div class="search-box">
+                <input type="text" id="queryInput" placeholder="Cari nama pelapak atau 4 digit nomor HP..."
+                    autocomplete="off" aria-label="Kolom pencarian pelapak" />
+                <button id="searchBtn" aria-label="Tombol cari pelapak">Cari</button>
+            </div>
+        </section>
+
+        <!-- RESULT BOX -->
+        <section>
+            <div id="resultBox" class="result-box hidden" role="region" aria-live="polite"></div>
+        </section>
+
+        <!-- LOADING SPINNER -->
+        <div id="loader" class="loader hidden" aria-hidden="true"></div>
+
+        <!-- SKELETON LOADING -->
+        <div id="skeletonBox" class="skeleton-box hidden" aria-hidden="true">
+            <div class="skeleton-item"></div>
+            <div class="skeleton-item"></div>
+            <div class="skeleton-item"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pencarian Pelapak UMKM</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div>
+                <h1>Pencarian Pelapak UMKM</h1>
+                <p class="desc">
+                    Mengidentifikasi pelapak tidak aktif agar grup UMKM tetap bersih dan promosi hanya dilakukan oleh
+                    anggota aktif.
+                </p>
+            </div>
+
+            <div class="controls">
+                <label class="theme-toggle">
+                    <input id="themeToggle" type="checkbox" aria-label="Toggle dark mode" />
+                    <span>🌙</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-card">
+            <div class="search-box">
+                <input type="text" id="queryInput" placeholder="Cari nama pelapak atau 4 digit nomor HP..."
+                    autocomplete="off" />
+                <button id="searchBtn">Cari</button>
+            </div>
+        </div>
+
+        <div id="resultBox" class="result-box hidden" role="region" aria-live="polite"></div>
+        
+        <div id="skeletonBox" class="skeleton-box hidden">
+            <div class="skeleton-item"></div>
+            <div class="skeleton-item"></div>
+            <div class="skeleton-item"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

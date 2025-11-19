@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pencarian Pelapak UMKM</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div>
+                <h1>Pencarian Pelapak UMKM</h1>
+                <p class="desc">
+                    Mengidentifikasi pelapak yang sudah tidak aktif agar grup UMKM tetap rapi, tidak digunakan untuk
+                    promosi oleh pelapak non-aktif, dan membantu panitia mengelola lapak lebih mudah.
+                </p>
+            </div>
+
+
+            <div class="controls">
+                <label class="theme-toggle">
+                    <input id="themeToggle" type="checkbox" />
+                    <span>Dark</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="queryInput" placeholder="Cari nama atau 4 digit nomor HP..."
+                    autocomplete="off" />
+                <button id="searchBtn">Cari</button>
+            </div>
+
+
+            <div id="resultBox" class="result-box hidden"></div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>UMKM Management Tool — Modern UI</p>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
