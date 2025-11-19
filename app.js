@@ -67,7 +67,7 @@ function searchData() {
     const is4 = /^\d{4}$/.test(onlyDigits);
     const q = is4 ? onlyDigits : raw.toLowerCase();
 
-    fetch(`${API_URL}?q=${encodeURIComponent(q)}`)
+    fetch(`${API_URL}?action=searchNomorHP&q=${encodeURIComponent(q)}`)
         .then(res => res.json())
         .then(data => {
             hideSkeleton();
